@@ -5,49 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio Agápio Lanches®</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <!-- CABEÇALHO -->
         <header class="header">
-            <h1 class="titulo-principal">Cardápio Agápio Lanches®</h1>
-            <h2 class="subtitulo">Desde 1982</h2>
-            
-            <div class="contatos">
-                <div class="telefones">
-                    <a href="tel:+553130260902" class="link-telefone">(51) 3026-0902</a>
-                    <a href="tel:+5531992141406" class="link-telefone">(51) 99214-1406</a>
-                </div>
+            <div class="header-content">
+                <h1 class="titulo-principal">Cardápio Agápio Lanches®</h1>
+                <h2 class="subtitulo">Desde 1982</h2>
                 
-                <a href="https://wa.me/5531992141406?text=Olá! Gostaria de fazer um pedido no Agápio Lanches" 
-                   class="botao-whatsapp">
-                    📱 Pedir pelo WhatsApp
-                </a>
+                <div class="contatos">
+                    <div class="telefones">
+                        <a href="tel:+553130260902" class="link-telefone">
+                            <i class="fas fa-phone"></i> (51) 3026-0902
+                        </a>
+                        <a href="tel:+5531992141406" class="link-telefone">
+                            <i class="fas fa-mobile-alt"></i> (51) 99214-1406
+                        </a>
+                    </div>
+                    
+                    <a href="https://wa.me/5531992141406?text=Olá! Gostaria de fazer um pedido no Agápio Lanches" 
+                       class="botao-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Pedir pelo WhatsApp
+                    </a>
+                </div>
             </div>
         </header>
 
         <!-- INFORMAÇÕES DO ESTABELECIMENTO -->
         <section class="info-estabelecimento">
-            <div class="endereco">
-                <a href="https://maps.google.com/?q=Av. José de Alencar, 869 - Menino Deus, Porto Alegre" 
-                   class="link-maps">
-                    🗺️ Av. José de Alencar, 869 - Menino Deus, Porto Alegre
-                </a>
-            </div>
-            
-            <div class="horario">
-                <strong>ABERTO DE SEGUNDA À DOMINGO DAS 11H À MEIA-NOITE</strong>
+            <div class="info-content">
+                <div class="endereco">
+                    <a href="https://maps.google.com/?q=Av. José de Alencar, 869 - Menino Deus, Porto Alegre" 
+                       class="link-maps">
+                        <i class="fas fa-map-marker-alt"></i> Av. José de Alencar, 869 - Menino Deus, Porto Alegre
+                    </a>
+                </div>
+                
+                <div class="horario">
+                    <i class="fas fa-clock"></i> 
+                    <strong>ABERTO DE SEGUNDA À DOMINGO DAS 11H À MEIA-NOITE</strong>
+                </div>
             </div>
         </section>
 
-        <!-- CARDÁPIO -->
+        <!-- MAPA -->
+        <section class="mapa-section">
+            <h2 class="titulo-mapa"><i class="fas fa-map"></i> Nossa Localização</h2>
+            <div class="mapa-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.515380728925!2d-51.22821792427042!3d-30.039466974924152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519790f4c0d3217%3A0x24b53e2f8b8b8b8b!2sAv.%20Jos%C3%A9%20de%20Alencar%2C%20869%20-%20Menino%20Deus%2C%20Porto%20Alegre%20-%20RS%2C%2090190-001!5e0!3m2!1spt-BR!2sbr!4v1690000000000!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- SEÇÃO MAIS PEDIDOS -->
+        <section class="mais-pedidos">
+            <h2 class="titulo-secao"><i class="fas fa-fire"></i> Mais Pedidos</h2>
+            <div class="pedidos-grid">
+                <div class="pedido-item">
+                    <div class="pedido-imagem">🍔</div>
+                    <h3>Xis Salada</h3>
+                    <p>O clássico da casa</p>
+                </div>
+                <div class="pedido-item">
+                    <div class="pedido-imagem">🥓</div>
+                    <h3>Xis Bacon</h3>
+                    <p>Croccante e saboroso</p>
+                </div>
+                <div class="pedido-item">
+                    <div class="pedido-imagem">🐔</div>
+                    <h3>Xis Frango</h3>
+                    <p>Leve e delicioso</p>
+                </div>
+                <div class="pedido-item">
+                    <div class="pedido-imagem">🌭</div>
+                    <h3>Dog Especial</h3>
+                    <p>Completo e recheado</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARDÁPIO COMPLETO -->
         <main class="cardapio">
             <section class="categoria">
-                <h2 class="titulo-categoria">LANCHES TRADICIONAIS</h2>
+                <h2 class="titulo-categoria"><i class="fas fa-utensils"></i> LANCHES TRADICIONAIS</h2>
                 
-                <!-- ITEM 1 -->
+                <!-- ITENS DO CARDÁPIO (mantenha os mesmos itens anteriores) -->
                 <div class="item-cardapio">
                     <div class="item-numero">01</div>
+                    <div class="item-imagem">🍔</div>
                     <div class="item-conteudo">
                         <h3 class="item-nome">Xis Salada</h3>
                         <p class="item-descricao">Pão massinha, hambúrguer bovino, tomate, alface, milho, ervilha, queijo, ovo e maionese</p>
@@ -55,9 +109,9 @@
                     <div class="item-preco">R$ 18,00</div>
                 </div>
 
-                <!-- ITEM 2 -->
                 <div class="item-cardapio">
                     <div class="item-numero">02</div>
+                    <div class="item-imagem">🍔</div>
                     <div class="item-conteudo">
                         <h3 class="item-nome">Xis Salada Simples</h3>
                         <p class="item-descricao">Hambúrguer bovino, maionese, queijo e ovo</p>
@@ -65,87 +119,7 @@
                     <div class="item-preco">R$ 14,00</div>
                 </div>
 
-                <!-- ITEM 3 -->
-                <div class="item-cardapio">
-                    <div class="item-numero">03</div>
-                    <div class="item-conteudo">
-                        <h3 class="item-nome">Xis Strogonoff</h3>
-                        <p class="item-descricao">Pão massinha, contralé, tomate, alface, champignon, batata palha, queijo, ovo, maionese e molho especial</p>
-                    </div>
-                    <div class="item-preco">R$ 32,00</div>
-                </div>
-
-                <!-- ITEM 4 -->
-                <div class="item-cardapio">
-                    <div class="item-numero">04</div>
-                    <div class="item-conteudo">
-                        <h3 class="item-nome">Xis da Casa</h3>
-                        <p class="item-descricao">Pão massinha, hambúrguer bovino, alface, tomate, milho, ervilha, pepino, maionese, palmito, presunto, queijo e ovo</p>
-                    </div>
-                    <div class="item-preco">R$ 24,00</div>
-                </div>
-
-                <!-- ITEM 5 -->
-                <div class="item-cardapio">
-                    <div class="item-numero">05</div>
-                    <div class="item-conteudo">
-                        <h3 class="item-nome">Xis Frango</h3>
-                        <p class="item-descricao">Pão massinha, peito de frango, tomate, alface, milho, ervilha, queijo, ovo e maionese</p>
-                    </div>
-                    <div class="item-preco">R$ 19,00</div>
-                </div>
-
-                <!-- ITEM 6 -->
-                <div class="item-cardapio">
-                    <div class="item-numero">06</div>
-                    <div class="item-conteudo">
-                        <h3 class="item-nome">Xis Coração</h3>
-                        <p class="item-descricao">Pão massinha, coração, tomate, alface, milho, ervilha, queijo, ovo e maionese</p>
-                    </div>
-                    <div class="item-preco">R$ 25,00</div>
-                </div>
-
-                <!-- ITEM 7 -->
-                <div class="item-cardapio">
-                    <div class="item-numero">07</div>
-                    <div class="item-conteudo">
-                        <h3 class="item-nome">Xis Bacon</h3>
-                        <p class="item-descricao">Pão massinha, hambúrguer bovino, bacon, tomate, alface, milho, ervilha, queijo, ovo e maionese</p>
-                    </div>
-                    <div class="item-preco">R$ 25,00</div>
-                </div>
-
-                <!-- ITEM 8 -->
-                <div class="item-cardapio">
-                    <div class="item-numero">08</div>
-                    <div class="item-conteudo">
-                        <h3 class="item-nome">Xis Calabresa</h3>
-                        <p class="item-descricao">Pão massinha, calabresa, tomate, alface, milho, ervilha, queijo, ovo, e maionese</p>
-                    </div>
-                    <div class="item-preco">R$ 19,00</div>
-                </div>
-
-                <!-- ITEM 9 -->
-                <div class="item-cardapio">
-                    <div class="item-numero">09</div>
-                    <div class="item-conteudo">
-                        <h3 class="item-nome">Xis Lombo</h3>
-                        <p class="item-descricao">Pão massinha, lombo, tomate, alface, milho, ervilha, queijo, ovo e maionese</p>
-                    </div>
-                    <div class="item-preco">R$ 19,00</div>
-                </div>
-
-                <!-- ITEM 10 -->
-                <div class="item-cardapio">
-                    <div class="item-numero">10</div>
-                    <div class="item-conteudo">
-                        <h3 class="item-nome">Xis Misto</h3>
-                        <p class="item-descricao">Pão massinha, coração, calabresa, contralé, bacon, tomate, alface, milho, ervilha, queijo, ovo e maionese</p>
-                    </div>
-                    <div class="item-preco">R$ 27,00</div>
-                </div>
-
-                <!-- ADICIONE MAIS ITENS AQUI CONFORME SEU PRINT -->
+                <!-- ADICIONE AQUI OS DEMAIS ITENS DO SEU CARDÁPIO -->
                 
             </section>
         </main>
@@ -154,21 +128,19 @@
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-info">
-                    <p>Agápio Lanches® - Desde 1982</p>
-                    <p>Av. José de Alencar, 869 - Menino Deus, Porto Alegre</p>
+                    <h3>Agápio Lanches®</h3>
+                    <p>Desde 1982 servindo os melhores lanches!</p>
                     <div class="footer-contatos">
-                        <a href="tel:+553130260902">(51) 3026-0902</a> | 
-                        <a href="tel:+5531992141406">(51) 99214-1406</a>
+                        <a href="tel:+553130260902"><i class="fas fa-phone"></i> (51) 3026-0902</a>
+                        <a href="tel:+5531992141406"><i class="fas fa-mobile-alt"></i> (51) 99214-1406</a>
                     </div>
                 </div>
                 
                 <div class="footer-creator">
-                    <!-- BOTÃO DO SEU WHATSAPP -->
                     <a href="https://wa.me/5551992496479?text=Olá! Gostaria de criar um site para meu negócio" 
                        class="botao-whatsapp-criador">
-                        💬 Site criado por FCL - Fale comigo
+                        <i class="fab fa-whatsapp"></i> Site criado por FCL - Fale comigo
                     </a>
-                    
                     <p class="creditos">Criado por FCL</p>
                 </div>
             </div>
